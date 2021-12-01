@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Application</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            <div class="container-fluid text-nowrap">
+              <a class="navbar-brand" href="#"><img src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/60/000000/external-note-back-to-school-vitaliy-gorbachev-lineal-color-vitaly-gorbachev.png" alt="" width="30" height="30" class="d-inline-block align-text-top me-2"/>NotesApp</a>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active lighter" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      All Notes
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Notes 1</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Notes 2</a></li>
+                      <li><hr class="dropdown-divider moreLighter"></li>
+                      <li><a class="dropdown-item" href="#">Notes 3</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active lighter" href="#">Edit History</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link active lighter" href="#">About</a>
+                  </li>
+                </ul>
+                <div class="toLeft">
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success searchBtn d-sm-none d-md-block" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+        </nav>
+    </header>
+    <main>
+      <div class=" centerDiv border mt-3">
+        <p class="ms-1">Add Notes</p>
+          <div class="input-group ms-3">
+            <input type="text" class="form-control me-2 border-3 " placeholder="Enter Note..." aria-label="Enter Note..." aria-describedby="add" id="newNote">
+            <button class="btn btn-outline-secondary rounded-pill" type="button" id="add">Add</button>
+          </div>
+      </div>
+      <div class=" centerDiv border mt-5 notesDiv">
+        <p class="text-warning bg-dark text-center fs-3">Notes</p>
+        <ul class="list-group " id="list">
+          <p class="text-center" id="empty">Notes are Empty</p>
+        </ul>
+      </div>
+    </main>
+    <script src="javaScript.js"></script>
+  </body>
+</html>

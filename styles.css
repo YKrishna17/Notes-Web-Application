@@ -1,0 +1,81 @@
+.navbar{
+    background-color: blueviolet;
+}
+.lighter{
+    opacity: 0.8;
+}
+.toLeft{
+    width: 68%;
+}
+.btn{
+    color: white;
+}
+.searchBtn{
+    background-color: rgb(238, 237, 237);
+    color: green;
+}
+.moreLighter{
+    opacity: 0.1;
+}
+.centerDiv{
+    margin: 0 auto;
+    width: 40%;
+    border-radius: 10px;
+    background-color: rgb(233, 230, 230);
+}
+.notesDiv{
+    max-height: 350px;
+    overflow: auto;
+}
+#add{
+    background-color: green;
+}
+#add:hover{
+    background-color: rgb(121, 175, 39);
+}
+.list-group-item{
+    margin-bottom: 2px;
+    border-width: 2px;
+    border-radius: 5px;
+}
+.edit{
+    background-color: #e7c310;
+    height: 100%;
+}
+.edit:hover{
+    background-color: #c5aa23;
+}
+.remove{
+    background-color: rgb(233, 32, 32);
+    height: 100%;
+}
+.remove:hover{
+    background-color: rgb(179, 34, 34);
+}
+.noteText{
+    width: 60%;
+    word-wrap: break-word; 
+}
+@media only screen and (max-width: 576px) {
+    .toLeft{
+        width: 100%;
+    }  
+}
+@media only screen and (max-width: 1000px) {
+    .centerDiv{
+        width: 45%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .centerDiv{
+        width: 55%;
+    }
+}
+@media only screen and (max-width: 670px) {
+    .centerDiv{
+        width: 80%;
+    }
+}
+body{
+    overflow: hidden;
+}
